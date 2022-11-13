@@ -1,0 +1,45 @@
+.player {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--primary-color);
+  background-color: var(--primary-light-color);
+  padding: 2rem 4%;
+  border-color: var(--primary-color);
+  border-width: 0 1px;
+  border-style: solid;
+}
+.player h2 {
+  font-size: 1.8rem;
+}
+.on {
+  background-color: var(--primary-color);
+  border-width: 0 1px;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+.player__score {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+}
+.player__current p,
+.player__score p {
+  margin: 0.4rem 0;
+  font-size: 1.2rem;
+}
+
+.player__current {
+  color: transparent;
+}
+.on .player__current,
+.on .player__score {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-light-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
